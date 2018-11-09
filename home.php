@@ -13,70 +13,71 @@
     <br>
     <center>
       <div class="container" id="imageCon">
-        <img class="slide" src="images/a.jpg">
-        <img class="slide" src="images/b.jpg" >
-        <img class="slide" src="images/c.jpg">
+        <img class="slide" src="images/wedding.jpg">
+        <img class="slide" src="images/hall.jpg" >
+        <img class="slide" src="images/hall2.jpg">
+
       </div>
     </center>
   <br>
 
 <center>
   <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);transition: 0.3s;width: 33.3%;float:left;">
-    <img src="images/skin.jpg" alt="images/a.jpg" style="width:100%">
+    <img src="images/food2.jpg" alt="images/wedding.jpg" style="width:100%">
       <div class="container" id="cardid" style="padding: 2px 16px;">
         <h4><b>Catering</b></h4>
-        <p>We believe in the power of natural ingredients, and that with scientific support, it creates the most effective results. Whatever your skin type and age are, our huge range of the latest skin care ingredients are tailored just......</p>
+        <p>Setting the bar high for outdoor catering, our five-star service is available for your special occasions and functions. With exciting menus to choose from, our catering service for your social gathering or corporate function can be custom designed to meet your needs.</p>
         <p style="margin-right:12px"><a type="button" id="footbut" href="skincare.php" style="text-decoration:none;align:center;">Visit Store</a></p>
       </div>
   </div>
   <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);transition: 0.3s;width: 33.33%;float:left">
-    <img src="images/makeup.jpg" alt="images/b.jpg" style="width:100%">
+    <img src="images/saloon.jpg" alt="images/hall.jpg" style="width:100%">
       <div class="container" id="cardid" style="padding: 2px 16px;">
-        <h4><b>Saloons</b></h4>
-        <p>Make-up should enhance your natural beauty, but also give you freedom to express your individual, radiant personality. We offer the best on-trend beauty picks and essentials such as mascaras, lipsticks, blushes, and foundations,.....</p>
+        <h4><b>Salons</b></h4>
+        <p>Your online appointment scheduling website is totally customizable. Add your own photos, videos, and graphics. We provide a few possible themes, but it’s easy to give it the look you want....  you can say everything about your salon.</p>
         <p style="margin-right:12px"><a type="button" id="footbut" href="makeup.php" style="text-decoration: none;">Visit Store</a></p>
       </div>
   </div>
 
   <div class="card" style="box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.2);transition: 0.3s;width: 33.33%;float:left;">
-    <img src="images/fragrance.jpg" alt="images/c.jpg" style="width:100%">
+    <img src="images/dj.jpg" alt="images/c.jpg" style="width:100%">
       <div class="container" id="cardid" style="padding: 2px 16px;">
         <h4><b>DJ</b></h4>
-        <p>A fragrance can seduce, bring forth beautiful memories or make you daydream about a faraway place. You can choose from our wide selection of perfumes inspired by dreams. All our fragrances are developed in France in order to ensure..</p>
+        <p>As a musician, your time is essential to providing great service and to growing your business. So it shouldn’t be spent undertaking admin and managing your diary.  All of our party DJs are highly experienced, professional and friendly and they know how to get a party going. </p>
         <p style="margin-right:12px"><a type="button" id="footbut" href="fragrance.php" style="text-decoration: none;">Visit Store</a></p>
       </div>
   </div>
 
   <br><br>
   <div class="card" style="alignbox-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);transition: 0.3s;width: 33.33%;float:left">
-    <img src="images/bath.jpg" alt="images/b.jpg" style="width:100%">
+    <img src="images/images.jpg" alt="images/b.jpg" style="width:100%">
       <div class="container" id="cardid" style="padding: 2px 16px;">
         <h4><b>Lighting</b></h4>
-        <p>Body care means taking care of your body from head to toe and plays an important role when you will feel clean, refreshed, healthy and pampered. We offer a comprehensive range of products for feet, oral hygiene and body, to meet....</p>
+        <p>Concert lighting is one of the largest uses of theatrical and entertainment lighting fixtures. Many worship facilities are designing their fellowship halls and sanctuaries to include concert style lighting. we supply all items.......</p>
         <p style="margin-right:12px"><a type="button" id="footbut" href="body.php" style="text-decoration: none;">Visit Store</a></p>
       </div>
   </div>
   <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);transition: 0.3s;width: 33.33%;float:left">
-    <img src="images/hai.jpg" alt="images/a.jpg" style="width:100%">
+    <img src="images/myhall.jpg" alt="images/a.jpg" style="width:100%">
       <div class="container" id="cardid" style="padding: 2px 16px;">
         <h4><b>Reception halls</b></h4>
-        <p>Whether you want to try out the latest hair trends or need care and treatment to the hair, so we have great styling and hair products that do the job and also offering a range of high-quality, natural products that are developed b..</p>
+        <p>it is possible to do things on a grand scale and still be in an intimate setting, in fact the Queens Court’s very existence serves this purpose. Wine private cocktails, workshops, special parties and big business meetings, but flourished in this very special setting</p>
         <p style="margin-right:12px"><a type="button" id="footbut" href="hair.php" style="text-decoration: none;">Visit Store</a></p>
       </div>
   </div>
   <br><br><br>
   <div class="card" style="box-shadow: 10px 4px 8px 0 rgba(0,0,0,0.2);transition: 0.3s;width: 33.33%;float:left">
-    <img src="images/wellness.jpg" alt="images/a.jpg" style="width:100%">
+    <img src="images/deco.jpg" alt="images/a.jpg" style="width:100%">
       <div class="container" id="cardid" style="padding: 2px 16px;">
         <h4><b>Decoration</b></h4>
-        <p>Are you ready to feel, and look, fantastic? At Wellness by Oriflame, we’re committed to guiding you through the complex world of healthy eating and dietary supplements, offering a range of high-quality, natural products that are developed by..</p>
+        <p>Decorate for your next party with effect lighting, international flags, party confetti and other festive decoration items from Oriental Trading..   Decorations for kids' parties and themed adult parties.  we have the unique products you’ll love at great prices.</p>
         <p style="margin-right:12px"><a type="button" id="footbut" href="wellness.php" style="text-decoration: none;">Visit Store</a></p>
       </div>
   </div>
 
   <center>
     <div class="card" style="box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.2);transition: 0.3s;width: 33.33%;margin-top:4px">
-      <img src="images/men.jpg" alt="images/a.jpg" style="width:100%">
+      <img src="images/food.jpg" alt="images/a.jpg" style="width:100%">
         <div class="container" id="cardid" style="padding: 2px 16px;">
           <h4><b>Cake & Sweet</b></h4>
           <p>Are you ready to feel, and look, fantastic? At Wellness by Oriflame, we’re committed to guiding you through the complex world of healthy eating and dietary supplements, offering a range of high-quality, natural products that are developed by..</p>
