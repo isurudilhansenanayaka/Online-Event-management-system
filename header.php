@@ -14,14 +14,16 @@ error_reporting(0);
 
   <body>
     <ul>
+      
       <li><a class="active" href="home.php">Home</a></li>
-      <li><a href="skincare.php">Skin-Care</a></li>
-      <li><a href="makeup.php">Make-Up</a></li>
+      <li><a href="makeup.php">Catering</a></li>
+      <li><a hiref="skincare.php">Salons</a></li>
+      <li><a href="makeup.php">DJ</a></li>
       <li><a href="fragrance.php">Fragrance</a></li>
-      <li><a href="body.php">Bath & Body</a></li>
-      <li><a href="hair.php">Hair</a></li>
-      <li><a href="wellness.php">Wellness</a></li>
-      <li><a href="men.php">Men</a></li>
+      <li><a href="body.php">Lighting</a></li>
+      <li><a href="hair.php">Reception halls</a></li>
+      <li><a href="decoration.php">Decoration</a></li>
+      <li><a href="cake.php">Cake & Sweet</a></li>
       <li><a href="Men">About</a></li>
       <li><a href="Men">Contact Us</a></li>
       <?php

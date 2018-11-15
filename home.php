@@ -22,10 +22,11 @@
   <br>
 
 <center>
-  <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);transition: 0.3s;width: 33.3%;float:left;">
+  <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);transition: 0.3s;width: 13.3%;float:left;">
     <img src="images/food2.jpg" alt="images/wedding.jpg" style="width:100%">
       <div class="container" id="cardid" style="padding: 2px 16px;">
-        <h4><b>Catering</b></h4>
+        <h4><b>Catering
+</b></h4>
         <p>Setting the bar high for outdoor catering, our five-star service is available for your special occasions and functions. With exciting menus to choose from, our catering service for your social gathering or corporate function can be custom designed to meet your needs.</p>
         <p style="margin-right:12px"><a type="button" id="footbut" href="skincare.php" style="text-decoration:none;align:center;">Visit Store</a></p>
       </div>
@@ -80,7 +81,7 @@
       <img src="images/food.jpg" alt="images/a.jpg" style="width:100%">
         <div class="container" id="cardid" style="padding: 2px 16px;">
           <h4><b>Cake & Sweet</b></h4>
-          <p>Are you ready to feel, and look, fantastic? At Wellness by Oriflame, we’re committed to guiding you through the complex world of healthy eating and dietary supplements, offering a range of high-quality, natural products that are developed by..</p>
+          <p>Cake Street Sweets serves delectable confections with a personal touch.</p>
           <center>
           <p style="margin-right:12px"><a type="button" id="footbut" href="men.php" style="text-decoration: none;">Visit Store</a></p>
           </center>
