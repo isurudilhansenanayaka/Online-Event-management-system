@@ -16,7 +16,7 @@ error_reporting(0);
     <ul>
       <li><a class="active" href="home.php">Home</a></li>
       <li><a href="skincare.php">Skin-Care</a></li>
-      <li><a href="makeup.php">Make-Up</a></li>
+      <li><a href="saloon.php">Saloon</a></li>
       <li><a href="fragrance.php">Fragrance</a></li>
       <li><a href="body.php">Bath & Body</a></li>
       <li><a href="hair.php">Hair</a></li>
