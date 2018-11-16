@@ -6,18 +6,18 @@ error_reporting(0);
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/navigation.css">
-    <title>Oriflame Sweden</title>
+    <title>The Event Management System</title>
     <center>
-      <h1>Oriflame Sweden</h1>
+      <h1>The Event Management System</h1>
     </center>
   </head>
 
   <body>
     <ul>
-      
+
       <li><a class="active" href="home.php">Home</a></li>
       <li><a href="makeup.php">Catering</a></li>
-      <li><a hiref="skincare.php">Salons</a></li>
+      <li><a hiref="saloon.php">Saloon</a></li>
       <li><a href="makeup.php">DJ</a></li>
       <li><a href="body.php">Lighting</a></li>
       <li><a href="hair.php">Reception halls</a></li>
