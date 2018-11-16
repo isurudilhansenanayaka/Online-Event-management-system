@@ -19,9 +19,6 @@ error_reporting(0);
       <li><a href="makeup.php">Catering</a></li>
       <li><a hiref="skincare.php">Salons</a></li>
       <li><a href="makeup.php">DJ</a></li>
-      <li><a href="skincare.php">Skin-Care</a></li>
-      <li><a href="saloon.php">Saloon</a></li>
-      <li><a href="fragrance.php">Fragrance</a></li>
       <li><a href="body.php">Lighting</a></li>
       <li><a href="hair.php">Reception halls</a></li>
       <li><a href="decoration.php">Decoration</a></li>

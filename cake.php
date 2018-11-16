@@ -23,7 +23,7 @@ $records = mysqli_query($db,$sql);
 </h1>
     <br>
       <div class="container" id="imageCon">
-        <img class="slide" src="images/ps.jpg">
+        <img class="slide" src="images/food.jpg">
       </div>
     </center>
   <br>
@@ -53,7 +53,7 @@ $records = mysqli_query($db,$sql);
           <input type='hidden' name='itemcode' value=<?php echo $item["ItemCode"];?>>
          <p><button tpe ="submit" id="footbut">Any Questions</button></p>
        </form>
-       <form class="" action="index.html" method="post">
+       <form class="" action="index.php" method="post">
         <input type='hidden' name='id' value=<?php echo $item["ItemCode"];?>>
         <p><button id="footbut">Quick Buy</button></p>
       </form>
