@@ -6,7 +6,7 @@
 <?php
 $db=mysqli_connect("localhost","root","") or die ("Error Occures");
 mysqli_select_db($db,"event") or die("Error Occures");
-$sql = "SELECT * FROM decoration";
+$sql = "SELECT * FROM saloon";
 $records = mysqli_query($db,$sql);
 ?>
 <html lang="en" dir="ltr">
@@ -23,7 +23,7 @@ $records = mysqli_query($db,$sql);
 
   <body>
     <center>
-        <h1>Decoration</h1>
+        <h1>Saloon</h1>
 
     </center>
     <br>

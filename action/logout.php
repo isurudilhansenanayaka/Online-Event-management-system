@@ -2,5 +2,5 @@
 session_start();
 session_unset();
 session_destroy();
-header("Location: http://localhost/Customer/home.php");
+header("Location: http://localhost/Event/home.php");
  ?>
