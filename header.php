@@ -16,7 +16,7 @@ error_reporting(0);
     <ul>
 
       <li><a class="active" href="home.php">Home</a></li>
-      <li><a href="makeup.php">Catering</a></li>
+      <li><a href="catering.php">Catering</a></li>
       <li><a hiref="saloon.php">Saloon</a></li>
       <li><a href="makeup.php">DJ</a></li>
       <li><a href="body.php">Lighting</a></li>

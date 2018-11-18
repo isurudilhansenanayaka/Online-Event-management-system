@@ -9,16 +9,16 @@ $number=mysqli_num_rows($result);
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../css/navigation.css">
-    <title>Oriflame Sweden</title>
+    <title>Event Management System</title>
     <center>
-      <h1>Oriflame Sweden</h1>
+      <h1>Event Management System</h1>
     </center>
   </head>
 
   <body>
     <ul>
       <li><a href="skin.php">Skin-Care</a></li>
-      <li><a href="makeup.php">Make-Up</a></li>
+      <li><a href="saloon.php">Saloon</a></li>
       <li><a href="fragrance.php">Fragrance</a></li>
       <li><a href="body.php">Bath & Body</a></li>
       <li><a href="hair.php">Hair</a></li>
