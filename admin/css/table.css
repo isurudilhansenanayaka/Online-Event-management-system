@@ -1,0 +1,50 @@
+table {
+    border-collapse: collapse;
+    width: 80%;
+    float:center;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #111;
+    color: white;
+}
+.button1 {
+    background-color: #3c7a95;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 2px;
+    cursor: pointer;
+    padding: 12px 28px;
+}
+.button2 {
+    background-color: #ee4e0d;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 2px;
+    cursor: pointer;
+    padding: 12px 28px;
+}
+.button3 {
+    background-color: #3c7a95;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    margin: 2px 2px;
+    cursor: pointer;
+    padding: 12px 28px;
+}

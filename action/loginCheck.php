@@ -1,6 +1,6 @@
 <?php
 $db=mysqli_connect("localhost","root",'');
-mysqli_select_db($db,'customer');
+mysqli_select_db($db,'event');
 
 $email = $_POST["email"];
 $password= $_POST["password"];
@@ -16,7 +16,7 @@ if($_POST["submit"]){
             $_SESSION['name']=$row['name'];
             $_SESSION['email']=$row['email'];
             $_SESSION['type']=$row['type'];
-            header("location: http://localhost/Customer/admin/skin.php");
+            header("location: http://localhost/Online-Event-management-system/admin/cake.php");
           }else{
             $_SESSION['auth']="a";
             $_SESSION['name']=$row['name'];

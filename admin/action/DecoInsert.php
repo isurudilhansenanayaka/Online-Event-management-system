@@ -15,7 +15,7 @@
 
   	if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
   		$msg = "successfully Inserted";
-      header("Location: http://localhost/Customer/admin/decoration.php");
+      header("Location: http://localhost/Online-Event-management-system/admin/decoration.php");
   	}else{
   		$msg = "Failed";
   	}

@@ -4,7 +4,7 @@
  ?>
 <?php
 $db=mysqli_connect("localhost","root","") or die ("Error Occures");
-mysqli_select_db($db,"customer") or die("Error Occures");
+mysqli_select_db($db,"event") or die("Error Occures");
 
 $type=$_POST['store'];
 $itemn=$_POST['itemname'];

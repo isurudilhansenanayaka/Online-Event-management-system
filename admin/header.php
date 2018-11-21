@@ -17,13 +17,13 @@ $number=mysqli_num_rows($result);
 
   <body>
     <ul>
-      <li><a href="skin.php">Skin-Care</a></li>
-      <li><a href="saloon.php">Saloon</a></li>
-      <li><a href="fragrance.php">Fragrance</a></li>
-      <li><a href="body.php">Bath & Body</a></li>
-      <li><a href="hair.php">Hair</a></li>
+      <li><a href="#">Catering</a></li>
+      <li><a href="saloon.php">Saloons</a></li>
+      <li><a href="fragrance.php">DJ</a></li>
+      <li><a href="body.php">Lighting</a></li>
+      <li><a href="hair.php">Reception halls</a></li>
       <li><a href="decoration.php">Decoration</a></li>
-      <li><a href="men.php">Men</a></li>
+      <li><a href="cake.php">Cake & Sweet</a></li>
       <li class="logSign"><a href="action/logout.php">LogOut</a></li>
       <li class="logSign"><a href="questions.php">Questions<span style="font-size:18px;position:relative;color:#fff;right:1px;bottom:8px;"><?php echo $number; ?></span></a></li>
       <li class="logSign"><a href="answeredQuestion.php">Answered Questions</a></li>
