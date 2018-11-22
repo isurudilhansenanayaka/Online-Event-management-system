@@ -3,8 +3,8 @@
 	mysqli_select_db($db,'event');
 
 	$typeofevent = $_POST["typeofevent"];
-	$itemName = $_POST["itemname"];
-	$itemCode= $_POST["itemc"];
+	$EventName = $_POST["EventName"];
+	$EventCode= $_POST["itemc"];
   $customerName= $_POST["cname"];
   $customerEmail = $_POST["cemail"];
   $q=$_POST["quantity"];
@@ -14,7 +14,7 @@
   $cno=$_POST['cno'];
   $address=$_POST['address'];
 	if($_POST["submit"]) {
-		$sql = "INSERT INTO customerorders VALUES (0,'$store','$itemCode','$itemName','$customerName','$customerEmail','$cno','$address','$q','$payment',0)";
+		$sql = "INSERT INTO customerorders VALUES (0,'$store','$EventCode','$EventName','$customerName','$customerEmail','$cno','$address','$q','$payment',0)";
 
 		if(mysqli_query($db,$sql)) {
 			echo "Done";

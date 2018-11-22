@@ -6,7 +6,7 @@
 <?php
 $db=mysqli_connect("localhost","root","") or die ("Error Occures");
 mysqli_select_db($db,"event") or die("Error Occures");
-$sql = "SELECT * FROM men";
+$sql = "SELECT * FROM cake&sweet";
 $records = mysqli_query($db,$sql);
 ?>
 <html lang="en" dir="ltr">
@@ -40,7 +40,6 @@ $records = mysqli_query($db,$sql);
                 <div class="container signin">
                   <center>
                     <h1>Insert New Cake Order</h1>
-
                     <p>Please fill in this form Correctly to Insert new Cake Order</p>
                   </center>
                 </div>
@@ -60,14 +59,14 @@ $records = mysqli_query($db,$sql);
                     <br>
                     <label for="Price"><b>Price LKR</b></label>
                     <br>
-                    <input type="Text" placeholder="Repeat Password" name="Price" required>
+                    <input type="Text" placeholder="Enter Price" name="Price" required>
                     <br>
                     <label for="image"><b>Image</b></label>
                     <br>
                     <input type="hidden" name="size" value="1000000">
                     <input type="file" name="image">
                     <hr>
-                    <input type="submit" class="registerbtn" name="submit" value="Insert"></input>
+                    <input type="submit" class="registerbtn" name="submit" value="Insert" ></input>
                 </center>
               </div>
 

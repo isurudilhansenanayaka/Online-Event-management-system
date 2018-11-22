@@ -7,8 +7,8 @@ $db=mysqli_connect("localhost","root","") or die ("Error Occures");
 mysqli_select_db($db,"event") or die("Error Occures");
 
 $type=$_POST['store'];
-$itemn=$_POST['itemname'];
-$itemc=$_POST['itemcode'];
+$itemn=$_POST['Eventname'];
+$itemc=$_POST['Eventcode'];
 $price=$_POST['price'];
 
 ?>
@@ -36,7 +36,7 @@ $price=$_POST['price'];
             <br>
             <label for="email"><b>Item Name</b></label>
             <br>
-            <input type="text" placeholder="Enter ItemName" name="itemname" value="<?php echo $itemn; ?>" readonly>
+            <input type="text" placeholder="Enter ItemName" name="Eventname" value="<?php echo $itemn; ?>" readonly>
             <br>
              <input type='hidden' name='price' value=<?php echo $price; ?>>
             <input type="hidden" name="itemc" value="<?php echo $itemc; ?>">

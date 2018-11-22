@@ -1,15 +1,15 @@
 <?php
   $db = mysqli_connect("localhost", "root", "", "event");
   $msg = "";
-  $itemcode=$_POST['ItemCode'];
-  $itemname=$_POST['ItemName'];
+  $EventCode=$_POST['EventCode'];
+  $EventName=$_POST['EventName'];
   $discription=$_POST['Discription'];
   $price=$_POST['Price'];
 
   if (isset($_POST['submit'])) {
     $image = $_FILES['image']['name'];
     $target = "images/".basename($image);
-    $sql = "INSERT INTO decoration VALUES ('$itemcode', '$itemname','$discription','$price','$image')";
+    $sql = "INSERT INTO decoration VALUES ('$EventCode', '$EventName','$discription','$price','$image')";
   	// execute query
   	mysqli_query($db, $sql);
 

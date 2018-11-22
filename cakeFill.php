@@ -11,14 +11,14 @@
   global $pri;
   $db=mysqli_connect("localhost","root","") or die ("Error Occures");
   mysqli_select_db($db,"event") or die("Error Occures");
-  $sql = "SELECT * FROM decoration WHERE EventCode='$id'";
+  $sql = "SELECT * FROM men WHERE EventCode='$id'";
   $records = mysqli_query($db,$sql);
   $row = mysqli_fetch_assoc($records);
   $ic=$row["EventCode"];
   $in=$row["EventName"];
   $dis=$row["Discription"];
   $pri=$row["Price"];
-  //header("Location: http://localhost/Online-Event-management-system/admin/decoration.php");
+  //header("Location: http:/localhost/Online-Event-management-system/admin/cake.php");
 
 ?>
 <!DOCTYPE html>
@@ -32,15 +32,15 @@
   </head>
   <body>
     <br>
-      <a type="button" id="myBtn" class="button3" href="decoration.php" style="margin-left:25px;background-color: #ee4e0d;">Back</a>
+      <a type="button" id="myBtn" class="button3" href="cake.php" style="margin-left:25px;background-color: #ee4e0d;">Back</a>
 
-            <form action="action/updatedeco.php" method="post" enctype="multipart/form-data">
+            <form action="action/updatecake.php" method="post" enctype="multipart/form-data">
               <div class="container">
                 <div class="container signin">
                   <center>
-                    <h1>Update Decoration Event</h1>
+                    <h1>Update Cake Event</h1>
                     <p>Please Make changes correctly to form to Update
-                       Decoration Event</p>
+                       cake Event</p>
                   </center>
                 </div>
                 <hr>
@@ -55,11 +55,11 @@
                     <br>
                     <label for="Discription"><b>Discription</b></label>
                     <br>
-                    <input type="text" placeholder="Enter Discription" name="Discription" value="<?php echo $dis ?>" required>
+                    <input type="text" placeholder="Enter Discription" name="Discription" value="<?php echo $dis ?>"required>
                     <br>
                     <label for="Price"><b>Price LKR</b></label>
                     <br>
-                    <input type="Text" placeholder="Enter Price" name="Price" value="<?php echo $pri ?>" required>
+                    <input type="Text" placeholder="Repeat Password" name="Price" value="<?php echo $pri ?>" required>
                     <br>
                     <label for="image"><b>Image</b></label>
                     <br>

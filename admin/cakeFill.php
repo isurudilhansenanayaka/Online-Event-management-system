@@ -11,14 +11,14 @@
   global $pri;
   $db=mysqli_connect("localhost","root","") or die ("Error Occures");
   mysqli_select_db($db,"event") or die("Error Occures");
-  $sql = "SELECT * FROM men WHERE EventCode='$id'";
+  $sql = "SELECT * FROM cake&sweet WHERE EventCode='$id'";
   $records = mysqli_query($db,$sql);
   $row = mysqli_fetch_assoc($records);
   $ic=$row["EventCode"];
   $in=$row["EventName"];
   $dis=$row["Discription"];
   $pri=$row["Price"];
-  //header("Location: http://localhost/event/admin/skin.php");
+  //header("Location: http://localhost/Online-Event-management-system/admin/skin.php");
 
 ?>
 <!DOCTYPE html>
@@ -40,7 +40,7 @@
                   <center>
                     <h1>Update Cake </h1>
                     <p>Please Make changes correctly to form to Update
-                       Men Item</p>
+                       cake&sweet Item</p>
                   </center>
                 </div>
                 <hr>

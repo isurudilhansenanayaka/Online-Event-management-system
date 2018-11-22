@@ -3,7 +3,7 @@
 <?php
 $db=mysqli_connect("localhost","root","") or die ("Error Occures");
 mysqli_select_db($db,"event") or die("Error Occures");
-$sql = "SELECT * FROM men";
+$sql = "SELECT * FROM cake&sweet";
 $records = mysqli_query($db,$sql);
 ?>
 <html lang="en" dir="ltr">
@@ -42,19 +42,19 @@ $records = mysqli_query($db,$sql);
     <img src=<?php echo "admin/action/images/".$item['Image'];?> alt="Image" style="width:100%;height:200px">
       <div class="container" id="cardid" style="padding: 2px 16px;">
         <center>
-        <h4><b><?php echo $item['ItemName']; ?></b></h4>
+        <h4><b><?php echo $item['EventName']; ?></b></h4>
         <center>
         <p><?php echo $item['Discription']; ?></p>
         <p><b>LKR </b><?php echo $item['Price']; ?></p>
       </center>
-      <form class="" action="question.php" method="post">
-          <input type="hidden" name="store" value="Men">
-          <input type='hidden' name='itemname' value=<?php echo $item["ItemName"];?>>
-          <input type='hidden' name='itemcode' value=<?php echo $item["ItemCode"];?>>
+      <form class="" action="question.php" method="Cake">
+          <input type="hidden" name="store" value="Cake">
+          <input type='hidden' name='Eventname' value=<?php echo $item["EventName"];?>>
+          <input type='hidden' name='Eventcode' value=<?php echo $item["EventCode"];?>>
          <p><button tpe ="submit" id="footbut">Any Questions</button></p>
        </form>
        <form class="" action="index.php" method="post">
-        <input type='hidden' name='id' value=<?php echo $item["ItemCode"];?>>
+        <input type='hidden' name='id' value=<?php echo $item["EventCode"];?>>
         <p><button id="footbut">Quick Buy</button></p>
       </form>
 

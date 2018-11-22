@@ -1,6 +1,6 @@
 <?php
 	$db=mysqli_connect("localhost","root",'');
-	mysqli_select_db($db,'customer');
+	mysqli_select_db($db,'event');
 
 	$name = $_POST["name"];
 	$email = $_POST["email"];

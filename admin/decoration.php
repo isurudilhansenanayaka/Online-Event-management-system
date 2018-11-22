@@ -28,30 +28,30 @@ $records = mysqli_query($db,$sql);
     </center>
     <br>
     <center>
-      <button id="myBtn" class="button3">Insert New Item</button>
+      <button id="myBtn" class="button3">Insert New Event</button>
       <!-- modal starts -->
       <div id="myModal" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
           <div class="modal-body">
 
-            <form action="action/wellnessInsert.php" method="post" enctype="multipart/form-data">
+            <form action="action/decoInsert.php" method="post" enctype="multipart/form-data">
               <div class="container">
                 <div class="container signin">
                   <center>
-                    <h1>Insert New Wellness Item</h1>
-                    <p>Please fill in this form Correctly to Insert new Wellness Item</p>
+                    <h1>Insert New Decoration Event</h1>
+                    <p>Please fill in this form Correctly to Insert new Decoration Event</p>
                   </center>
                 </div>
                 <hr>
                 <center>
-                    <label for="ItemCode"><b>Item Code</b></label>
+                    <label for="EventCode"><b>Event Code</b></label>
                     <br>
-                    <input type="text" placeholder="Enter Name" name="ItemCode" required>
+                    <input type="text" placeholder="Enter Name" name="EventCode" required>
                     <br>
-                    <label for="ItemName"><b>Item Name</b></label>
+                    <label for="EventName"><b>Event Name</b></label>
                     <br>
-                    <input type="text" placeholder="Enter Email" name="ItemName" required>
+                    <input type="text" placeholder="Enter Email" name="EventName" required>
                     <br>
                     <label for="Discription"><b>Discription</b></label>
                     <br>
@@ -59,7 +59,7 @@ $records = mysqli_query($db,$sql);
                     <br>
                     <label for="Price"><b>Price LKR</b></label>
                     <br>
-                    <input type="Text" placeholder="Repeat Password" name="Price" required>
+                    <input type="Text" placeholder="Enter Price" name="Price" required>
                     <br>
                     <label for="image"><b>Image</b></label>
                     <br>
@@ -90,8 +90,8 @@ $records = mysqli_query($db,$sql);
     <center>
     <table id="myTable">
       <tr>
-        <th>ItemCode</th>
-        <th>Item Name</th>
+        <th>Event Code</th>
+        <th>Event Name</th>
         <th>Discription</th>
         <th>price LKR</th>
         <th>Action</th>
@@ -103,17 +103,17 @@ $records = mysqli_query($db,$sql);
         while($row = mysqli_fetch_assoc($records)) {
 
           echo "<tr>";
-					echo "<td>".$row["ItemCode"]."</td>";
-					echo "<td>".$row["ItemName"]."</td>";
+					echo "<td>".$row["EventCode"]."</td>";
+					echo "<td>".$row["EventName"]."</td>";
 					echo "<td>".$row["Discription"]."</td>";
 					echo "<td>".$row["Price"]."</td>";
           echo "<td>
-              <form method='post' action='wellnessFill.php'>
-              <input type='hidden' name='id' value=".$row["ItemCode"].">
+              <form method='post' action='decoFill.php'>
+              <input type='hidden' name='id' value=".$row["EventCode"].">
               <button id=".$count." class='button1'>Edit</button>
               </form>
-              <form method='post' action='action/wellnessDel.php' onsubmit='return delAl()'>
-              <input type='hidden' name='id' value=".$row["ItemCode"].">
+              <form method='post' action='action/decoDel.php' onsubmit='return delAl()'>
+              <input type='hidden' name='id' value=".$row["EventCode"].">
               <button type='submit' class='button2'>Delete</button>
               </form>
           </td>";

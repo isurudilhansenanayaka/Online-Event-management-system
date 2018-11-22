@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 16, 2018 at 04:50 AM
+-- Generation Time: Nov 22, 2018 at 09:32 AM
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 5.6.24
 
@@ -183,8 +183,8 @@ INSERT INTO `makeup` (`ItemCode`, `ItemName`, `Discription`, `Price`, `Image`) V
 --
 
 CREATE TABLE `men` (
-  `ItemCode` varchar(255) NOT NULL,
-  `ItemName` varchar(255) NOT NULL,
+  `EventCode` varchar(255) NOT NULL,
+  `EventName` varchar(255) NOT NULL,
   `Discription` varchar(255) NOT NULL,
   `Price` varchar(255) NOT NULL,
   `Image` varchar(255) NOT NULL
@@ -194,7 +194,8 @@ CREATE TABLE `men` (
 -- Dumping data for table `men`
 --
 
-INSERT INTO `men` (`ItemCode`, `ItemName`, `Discription`, `Price`, `Image`) VALUES
+INSERT INTO `men` (`EventCode`, `EventName`, `Discription`, `Price`, `Image`) VALUES
+('eeeee', 'a', 'fffff', 'addd', ''),
 ('men001', 'soap', 'suitable for men', '1500', 'ps.jpg');
 
 -- --------------------------------------------------------
@@ -315,7 +316,7 @@ ALTER TABLE `makeup`
 -- Indexes for table `men`
 --
 ALTER TABLE `men`
-  ADD PRIMARY KEY (`ItemCode`);
+  ADD PRIMARY KEY (`EventCode`);
 
 --
 -- Indexes for table `question`

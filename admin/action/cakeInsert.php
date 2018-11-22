@@ -9,13 +9,13 @@
   if (isset($_POST['submit'])) {
     $image = $_FILES['image']['name'];
     $target = "images/".basename($image);
-    $sql = "INSERT INTO men VALUES ('$EventCode', '$EventName','$discription','$price','$image')";
+    $sql = "INSERT INTO cake&sweet VALUES ('$EventCode', '$EventName','$discription','$price','$image')";
   	// execute query
   	mysqli_query($db, $sql);
 
   	if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
   		$msg = "successfully Inserted";
-      header("Location: http://localhost/event/admin/men.php");
+      header("Location: http://localhost/Online-Event-managecake&sweett-system/admin/cake.php");
   	}else{
   		$msg = "Failed";
   	}

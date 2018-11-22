@@ -13,7 +13,7 @@
         <div class="container signin">
           <center>
             <h1>Register</h1>
-            <p>Please fill in this form to and Be a Part of Oriflame</p>
+            <p>Please fill in this form to and Be a Part of The Event management system</p>
           </center>
         </div>
         <hr>

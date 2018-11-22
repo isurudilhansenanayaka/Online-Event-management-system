@@ -9,7 +9,7 @@
   if (isset($_POST['submit'])) {
     $image = $_FILES['image']['name'];
     $target = "images/".basename($image);
-    $sql="UPDATE men SET EventName='$EventName' , Discription='$discription' , Price='$price' WHERE EventCode='$EventCode'";
+    $sql="UPDATE cake&sweet SET EventName='$EventName' , Discription='$discription' , Price='$price' WHERE EventCode='$EventCode'";
   	mysqli_query($db, $sql);
 
   	if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
@@ -18,6 +18,6 @@
   	}else{
   		$msg = "Failed";
   	}
-    header("Location: http://localhost/event/admin/men.php");
+    header("Location: http://localhost/Online-Event-management-system/admin/cake.php");
   }
 ?>
