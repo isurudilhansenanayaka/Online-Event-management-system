@@ -63,7 +63,7 @@
       <div class="container" id="cardid" style="padding: 2px 16px;">
         <h4><b>Reception halls</b></h4>
         <p>it is possible to do things on a grand scale and still be in an intimate setting, in fact the Queens Court’s very existence serves this purpose. Wine private cocktails, workshops, special parties and big business meetings, but flourished in this very special setting</p>
-        <p style="margin-right:12px"><a type="button" id="footbut" href="#" style="text-decoration: none;">Go to Event</a></p>
+        <p style="margin-right:12px"><a type="button" id="footbut" href="receptions.php" style="text-decoration: none;">Go to Event</a></p>
       </div>
   </div>
   <br><br><br>
