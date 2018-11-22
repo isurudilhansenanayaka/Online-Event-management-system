@@ -6,7 +6,7 @@
 <?php
 $db=mysqli_connect("localhost","root","") or die ("Error Occures");
 mysqli_select_db($db,"event") or die("Error Occures");
-$sql = "SELECT * FROM cake&sweet";
+$sql = "SELECT * FROM men";
 $records = mysqli_query($db,$sql);
 ?>
 <html lang="en" dir="ltr">
@@ -39,8 +39,8 @@ $records = mysqli_query($db,$sql);
               <div class="container">
                 <div class="container signin">
                   <center>
-                    <h1>Insert New Cake Order</h1>
-                    <p>Please fill in this form Correctly to Insert new Cake Order</p>
+                    <h1>Insert New Cake $ Sweet Event</h1>
+                    <p>Please fill in this form Correctly to Insert new Cake & Sweet Event</p>
                   </center>
                 </div>
                 <hr>
@@ -66,7 +66,7 @@ $records = mysqli_query($db,$sql);
                     <input type="hidden" name="size" value="1000000">
                     <input type="file" name="image">
                     <hr>
-                    <input type="submit" class="registerbtn" name="submit" value="Insert" ></input>
+                    <input type="submit" class="registerbtn" name="submit" value="Insert"></input>
                 </center>
               </div>
 
@@ -85,7 +85,7 @@ $records = mysqli_query($db,$sql);
     </center>
     <br>
 
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Enter Event Code" style="float:right;margin-right:140px;margin-bottom:5px;">
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Enter Item Code" style="float:right;margin-right:140px;margin-bottom:5px;">
     <br>
     <center>
     <table id="myTable">

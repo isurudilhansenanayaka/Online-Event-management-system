@@ -11,7 +11,7 @@
   global $pri;
   $db=mysqli_connect("localhost","root","") or die ("Error Occures");
   mysqli_select_db($db,"event") or die("Error Occures");
-  $sql = "SELECT * FROM makeup WHERE EventCode='$id'";
+  $sql = "SELECT * FROM DJ WHERE EventCode='$id'";
   $records = mysqli_query($db,$sql);
   $row = mysqli_fetch_assoc($records);
   $ic=$row["EventCode"];
@@ -34,13 +34,13 @@
     <br>
       <a type="button" id="myBtn" class="button3" href="saloon.php" style="margin-left:25px;background-color: #ee4e0d;">Back</a>
 
-            <form action="action/updateSaloon.php" method="post" enctype="multipart/form-data">
+            <form action="action/updateDJ.php" method="post" enctype="multipart/form-data">
               <div class="container">
                 <div class="container signin">
                   <center>
-                    <h1>Update Saloon Event</h1>
+                    <h1>Update DJ Event</h1>
                     <p>Please Make changes correctly to form to Update
-                       Saloon Event</p>
+                       DJ Event</p>
                   </center>
                 </div>
                 <hr>

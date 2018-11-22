@@ -6,7 +6,7 @@
 <?php
 $db=mysqli_connect("localhost","root","") or die ("Error Occures");
 mysqli_select_db($db,"event") or die("Error Occures");
-$sql = "SELECT * FROM makeup";
+$sql = "SELECT * FROM dj";
 $records = mysqli_query($db,$sql);
 ?>
 <html lang="en" dir="ltr">
@@ -23,7 +23,7 @@ $records = mysqli_query($db,$sql);
 
   <body>
     <center>
-        <h1>Saloon</h1>
+        <h1>DJ</h1>
 
     </center>
     <br>
@@ -35,12 +35,12 @@ $records = mysqli_query($db,$sql);
           <span class="close">&times;</span>
           <div class="modal-body">
 
-            <form action="action/salooninsert.php" method="post" enctype="multipart/form-data">
+            <form action="action/DJinsert.php" method="post" enctype="multipart/form-data">
               <div class="container">
                 <div class="container signin">
                   <center>
-                    <h1>Insert New Saloon Event</h1>
-                    <p>Please fill in this form Correctly to Insert new Saloon Event</p>
+                    <h1>Insert New DJ Event</h1>
+                    <p>Please fill in this form Correctly to Insert new DJ Event</p>
                   </center>
                 </div>
                 <hr>
@@ -108,11 +108,11 @@ $records = mysqli_query($db,$sql);
 					echo "<td>".$row["Discription"]."</td>";
 					echo "<td>".$row["Price"]."</td>";
           echo "<td>
-              <form method='post' action='saloonfill.php'>
+              <form method='post' action='DJfill.php'>
               <input type='hidden' name='id' value=".$row["EventCode"].">
               <button id=".$count." class='button1'>Edit</button>
               </form>
-              <form method='post' action='action/saloondel.php' onsubmit='return delAl()'>
+              <form method='post' action='action/DJdel.php' onsubmit='return delAl()'>
               <input type='hidden' name='id' value=".$row["EventCode"].">
               <button type='submit' class='button2'>Delete</button>
               </form>
