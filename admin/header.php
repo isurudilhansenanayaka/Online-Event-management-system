@@ -17,7 +17,7 @@ $number=mysqli_num_rows($result);
 
   <body>
     <ul>
-      <li><a href="#">Catering</a></li>
+      <li><a href="catering.php">Catering</a></li>
       <li><a href="saloon.php">Saloons</a></li>
       <li><a href="DJ.php">DJ</a></li>
       <li><a href="body.php">Lighting</a></li>
