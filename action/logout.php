@@ -2,5 +2,5 @@
 session_start();
 session_unset();
 session_destroy();
-header("Location: http://localhost/Online-Event-management-system/home.php");
+header("Location: http://localhost/gt5/home.php");
  ?>

@@ -13,15 +13,22 @@ if($_POST["submit"]){
     if (mysqli_num_rows($result)==1) {
           session_start();
           if($row['type']=="Admin"){
+			$_SESSION['id']=$row['Id'];
             $_SESSION['name']=$row['name'];
             $_SESSION['email']=$row['email'];
-            $_SESSION['type']=$row['type'];
+            $_SESSION['type']=$row['type']; 
+			 ///////////////////////////////////////////////////////
             header("location: http://localhost/Online-Event-management-system/admin/cake.php");
           }else{
+			$_SESSION['id']=$row['Id'];
             $_SESSION['auth']="a";
             $_SESSION['name']=$row['name'];
             $_SESSION['email']=$row['email'];
-            //echo $_Session['name'];
+	
+			//////////////////////////////////////////////////
+
+            //echo $_SESSION['name'];
+
             header("location: ../home.php");
           }
 
