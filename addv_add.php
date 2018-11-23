@@ -34,15 +34,9 @@
 			<input type="text" placeholder="Enter your service description" name="discription"><br>
             
             <hr>
-           <! <input type="submit" class="addvertisment" name="submit"><!</input>
-		<!</form>
-		<!</div>
-		
-		<!<div id="container" align='right'>
-		
-			<!<form action='upload.php' method='post'enctype='multipart/form-data' >
-				<input type='file' name='file' id='file' multiple>
-				<input type='submit' value='submit' name="submit">
+           
+			<input type='file' name='file' id='file' multiple>
+			<input type='submit' value='submit' name="submit">
 		</form>
 			
 		</div>
