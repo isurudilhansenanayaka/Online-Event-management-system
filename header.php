@@ -19,7 +19,7 @@ error_reporting(0);
       <li><a href="catering.php">Catering</a></li>
       <li><a href="saloon.php">Saloon</a></li>
       <li><a href="DJ.php">DJ</a></li>
-      <li><a href="lighting.php">Lighting</a></li>
+      <li><a href="Lighting.php">Lighting</a></li>
       <li><a href="receptions.php">Reception halls</a></li>
       <li><a href="decoration.php">Decoration</a></li>
       <li><a href="cake.php">Cake & Sweet</a></li>
