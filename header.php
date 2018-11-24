@@ -21,7 +21,7 @@ error_reporting(0);
       <li><a href="decoration.php">Decoration</a></li>
       <li><a href="cake.php">Cake & Sweet</a></li>
       <li><a href="aboutus.php">About</a></li>
-      <li><a href="Men">Contact Us</a></li>
+      <li><a href="contactus.php">Contact Us</a></li>
       <?php
         session_start();
         if($_SESSION['auth']=='a'){
