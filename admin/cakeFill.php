@@ -11,7 +11,7 @@
   global $pri;
   $db=mysqli_connect("localhost","root","") or die ("Error Occures");
   mysqli_select_db($db,"event") or die("Error Occures");
-  $sql = "SELECT * FROM cake&sweet WHERE EventCode='$id'";
+  $sql = "SELECT * FROM men WHERE EventCode='$id'";
   $records = mysqli_query($db,$sql);
   $row = mysqli_fetch_assoc($records);
   $ic=$row["EventCode"];

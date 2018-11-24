@@ -1,21 +1,11 @@
 -- phpMyAdmin SQL Dump
-<<<<<<< HEAD
 -- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 24, 2018 at 05:32 AM
+-- Generation Time: Nov 24, 2018 at 01:55 PM
 -- Server version: 10.1.35-MariaDB
 -- PHP Version: 7.2.9
-=======
--- version 4.8.2
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Nov 24, 2018 at 06:31 AM
--- Server version: 10.1.34-MariaDB
--- PHP Version: 7.2.8
->>>>>>> 8397726962d090e68a6f4005eb88cf0a6689feab
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -162,8 +152,8 @@ INSERT INTO `customerorders` (`OrderNo`, `StoreType`, `ItemCode`, `ItemName`, `C
 --
 
 CREATE TABLE `decoration` (
-  `DecoCode` varchar(255) NOT NULL,
-  `DecoName` varchar(255) NOT NULL,
+  `EventCode` varchar(255) NOT NULL,
+  `EventName` varchar(255) NOT NULL,
   `Discription` varchar(255) NOT NULL,
   `Price` varchar(255) NOT NULL,
   `Image` varchar(255) NOT NULL
@@ -173,7 +163,7 @@ CREATE TABLE `decoration` (
 -- Dumping data for table `decoration`
 --
 
-INSERT INTO `decoration` (`DecoCode`, `DecoName`, `Discription`, `Price`, `Image`) VALUES
+INSERT INTO `decoration` (`EventCode`, `EventName`, `Discription`, `Price`, `Image`) VALUES
 ('D001', 'Free Lanka pvt.', 'good one', '1000.00', 'free.png');
 
 -- --------------------------------------------------------
@@ -267,8 +257,8 @@ INSERT INTO `makeup` (`EventCode`, `EventName`, `Discription`, `Price`, `Image`)
 --
 
 CREATE TABLE `men` (
-  `ItemCode` varchar(255) NOT NULL,
-  `ItemName` varchar(255) NOT NULL,
+  `EventCode` varchar(255) NOT NULL,
+  `EventName` varchar(255) NOT NULL,
   `Discription` varchar(255) NOT NULL,
   `Price` varchar(255) NOT NULL,
   `Image` varchar(255) NOT NULL
@@ -278,8 +268,8 @@ CREATE TABLE `men` (
 -- Dumping data for table `men`
 --
 
-INSERT INTO `men` (`ItemCode`, `ItemName`, `Discription`, `Price`, `Image`) VALUES
-('men001', 'soap', 'suitable for men', '1500', 'ps.jpg');
+INSERT INTO `men` (`EventCode`, `EventName`, `Discription`, `Price`, `Image`) VALUES
+('c001', 'wedding cake', 'For wedding', '10000.00', 'cake1.jpg');
 
 -- --------------------------------------------------------
 
@@ -373,7 +363,7 @@ ALTER TABLE `customerorders`
 -- Indexes for table `decoration`
 --
 ALTER TABLE `decoration`
-  ADD PRIMARY KEY (`DecoCode`);
+  ADD PRIMARY KEY (`EventCode`);
 
 --
 -- Indexes for table `dj`
@@ -403,7 +393,7 @@ ALTER TABLE `makeup`
 -- Indexes for table `men`
 --
 ALTER TABLE `men`
-  ADD PRIMARY KEY (`ItemCode`);
+  ADD PRIMARY KEY (`EventCode`);
 
 --
 -- Indexes for table `question`
@@ -432,43 +422,6 @@ ALTER TABLE `advertisement`
 --
 ALTER TABLE `customerorders`
   MODIFY `OrderNo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
---
--- AUTO_INCREMENT for table `question`
---
-ALTER TABLE `question`
-<<<<<<< HEAD
-  MODIFY `QuestionNo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
-=======
-  MODIFY `QuestionNo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
->>>>>>> 8397726962d090e68a6f4005eb88cf0a6689feab
-
---
--- AUTO_INCREMENT for table `users`
---
-ALTER TABLE `users`
-<<<<<<< HEAD
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
-=======
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `addv_image`
---
-ALTER TABLE `addv_image`
-  ADD CONSTRAINT `addv_image_ibfk_1` FOREIGN KEY (`addv_id`) REFERENCES `advertisement` (`addv_id`);
-
---
--- Constraints for table `add_owner`
---
-ALTER TABLE `add_owner`
-  ADD CONSTRAINT `add_owner_ibfk_1` FOREIGN KEY (`addv_id`) REFERENCES `advertisement` (`addv_id`),
-  ADD CONSTRAINT `add_owner_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `users` (`Id`);
->>>>>>> 8397726962d090e68a6f4005eb88cf0a6689feab
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

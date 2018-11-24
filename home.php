@@ -21,7 +21,7 @@
     </center>
   <br>
 
-<center>
+  <center>
   <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);transition: 0.3s;width: 33.3%;float:left;">
     <img src="images/food2.jpg" alt="images/wedding.jpg" style="width:100%">
       <div class="container" id="cardid" style="padding: 2px 16px;">
@@ -55,7 +55,7 @@
       <div class="container" id="cardid" style="padding: 2px 16px;">
         <h4><b>Lighting</b></h4>
         <p>Concert lighting is one of the largest uses of theatrical and entertainment lighting fixtures. Many worship facilities are designing their fellowship halls and sanctuaries to include concert style lighting. we supply all items.......</p>
-        <p style="margin-right:12px"><a type="button" id="footbut" href="#" style="text-decoration: none; background-color: 1E90FF;">Go to Event</a></p>
+        <p style="margin-right:12px"><a type="button" id="footbut" href="lighting.php" style="text-decoration: none; background-color: 1E90FF;">Go to Event</a></p>
       </div>
   </div>
   <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);transition: 0.3s;width: 33.33%;float:left">
@@ -63,7 +63,7 @@
       <div class="container" id="cardid" style="padding: 2px 16px;">
         <h4><b>Reception halls</b></h4>
         <p>it is possible to do things on a grand scale and still be in an intimate setting, in fact the Queens Court’s very existence serves this purpose. Wine private cocktails, workshops, special parties and big business meetings, but flourished in this very special setting</p>
-        <p style="margin-right:12px"><a type="button" id="footbut" href="#" style="text-decoration: none;">Go to Event</a></p>
+        <p style="margin-right:12px"><a type="button" id="footbut" href="receptions.php" style="text-decoration: none;">Go to Event</a></p>
       </div>
   </div>
   <br><br><br>
