@@ -1,4 +1,5 @@
 -- phpMyAdmin SQL Dump
+<<<<<<< HEAD
 -- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
@@ -6,6 +7,15 @@
 -- Generation Time: Nov 24, 2018 at 05:32 AM
 -- Server version: 10.1.35-MariaDB
 -- PHP Version: 7.2.9
+=======
+-- version 4.8.2
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Nov 24, 2018 at 06:31 AM
+-- Server version: 10.1.34-MariaDB
+-- PHP Version: 7.2.8
+>>>>>>> 8397726962d090e68a6f4005eb88cf0a6689feab
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -21,6 +31,57 @@ SET time_zone = "+00:00";
 --
 -- Database: `event`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `addv_image`
+--
+
+CREATE TABLE `addv_image` (
+  `addv_id` int(11) NOT NULL,
+  `image_path` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `add_owner`
+--
+
+CREATE TABLE `add_owner` (
+  `addv_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `advertisement`
+--
+
+CREATE TABLE `advertisement` (
+  `addv_id` int(11) NOT NULL,
+  `keytag` varchar(255) NOT NULL,
+  `titile` varchar(255) NOT NULL,
+  `area` varchar(255) NOT NULL,
+  `description` text NOT NULL,
+  `date` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `advertisement`
+--
+
+INSERT INTO `advertisement` (`addv_id`, `keytag`, `titile`, `area`, `description`, `date`) VALUES
+(5, 'gfdsb', 'dd', 'vcx', 'xx', '0000-00-00'),
+(8, 'aa', 'nbvc', 'nnn', 'tfdx', '0000-00-00'),
+(9, 'aa', 'nbvc', 'nnn', 'tfdx', '0000-00-00'),
+(10, 'aa', 'nbvc', 'nnn', 'tfdx', '0000-00-00'),
+(11, 'aa', 'nbvc', 'nnn', 'tfdx', '0000-00-00'),
+(12, 'aa', 'nbvc', 'nnn', 'tfdx', '0000-00-00'),
+(13, 'aa', 'nbvc', 'nnn', 'tfdx', '2018-11-23'),
+(14, 'aa', 'nbvc', 'nnn', 'tfdx', '2018-11-23');
 
 -- --------------------------------------------------------
 
@@ -101,8 +162,8 @@ INSERT INTO `customerorders` (`OrderNo`, `StoreType`, `ItemCode`, `ItemName`, `C
 --
 
 CREATE TABLE `decoration` (
-  `EventCode` varchar(255) NOT NULL,
-  `EventName` varchar(255) NOT NULL,
+  `DecoCode` varchar(255) NOT NULL,
+  `DecoName` varchar(255) NOT NULL,
   `Discription` varchar(255) NOT NULL,
   `Price` varchar(255) NOT NULL,
   `Image` varchar(255) NOT NULL
@@ -112,8 +173,7 @@ CREATE TABLE `decoration` (
 -- Dumping data for table `decoration`
 --
 
-INSERT INTO `decoration` (`EventCode`, `EventName`, `Discription`, `Price`, `Image`) VALUES
-('a', 'sun city', 'new event', '150000.00', ''),
+INSERT INTO `decoration` (`DecoCode`, `DecoName`, `Discription`, `Price`, `Image`) VALUES
 ('D001', 'Free Lanka pvt.', 'good one', '1000.00', 'free.png');
 
 -- --------------------------------------------------------
@@ -207,8 +267,8 @@ INSERT INTO `makeup` (`EventCode`, `EventName`, `Discription`, `Price`, `Image`)
 --
 
 CREATE TABLE `men` (
-  `EventCode` varchar(255) NOT NULL,
-  `EventName` varchar(255) NOT NULL,
+  `ItemCode` varchar(255) NOT NULL,
+  `ItemName` varchar(255) NOT NULL,
   `Discription` varchar(255) NOT NULL,
   `Price` varchar(255) NOT NULL,
   `Image` varchar(255) NOT NULL
@@ -218,10 +278,8 @@ CREATE TABLE `men` (
 -- Dumping data for table `men`
 --
 
-INSERT INTO `men` (`EventCode`, `EventName`, `Discription`, `Price`, `Image`) VALUES
-('ccc', 'cccccccccccccccc', 'cccggggg', 'ccc', ''),
-('eeeee', 'a', 'fffffkk', '1', ''),
-('men001', 'soap', 'suitable for men', '15000', 'ps.jpg');
+INSERT INTO `men` (`ItemCode`, `ItemName`, `Discription`, `Price`, `Image`) VALUES
+('men001', 'soap', 'suitable for men', '1500', 'ps.jpg');
 
 -- --------------------------------------------------------
 
@@ -266,12 +324,32 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`Id`, `name`, `email`, `password`, `type`) VALUES
-(1, 'isuru', 'dilisuru22@gmail.com', '111111', 'Admin'),
-(2, 'hasee', 'hasee@gmail.com', '123', 'Customer');
+(1, 'Thuhini', 'admin@gmail.com', '111111', 'Admin'),
+(4, 'Kaumini Hansika', 'kaumini@gmail.com', '111111', 'Customer'),
+(5, 'Admin', 'UCSC', 'UCSC', 'Admin');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `addv_image`
+--
+ALTER TABLE `addv_image`
+  ADD PRIMARY KEY (`addv_id`);
+
+--
+-- Indexes for table `add_owner`
+--
+ALTER TABLE `add_owner`
+  ADD PRIMARY KEY (`user_id`,`addv_id`),
+  ADD KEY `addv_id` (`addv_id`);
+
+--
+-- Indexes for table `advertisement`
+--
+ALTER TABLE `advertisement`
+  ADD PRIMARY KEY (`addv_id`);
 
 --
 -- Indexes for table `answer`
@@ -295,7 +373,7 @@ ALTER TABLE `customerorders`
 -- Indexes for table `decoration`
 --
 ALTER TABLE `decoration`
-  ADD PRIMARY KEY (`EventCode`);
+  ADD PRIMARY KEY (`DecoCode`);
 
 --
 -- Indexes for table `dj`
@@ -325,7 +403,7 @@ ALTER TABLE `makeup`
 -- Indexes for table `men`
 --
 ALTER TABLE `men`
-  ADD PRIMARY KEY (`EventCode`);
+  ADD PRIMARY KEY (`ItemCode`);
 
 --
 -- Indexes for table `question`
@@ -344,6 +422,12 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `advertisement`
+--
+ALTER TABLE `advertisement`
+  MODIFY `addv_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+--
 -- AUTO_INCREMENT for table `customerorders`
 --
 ALTER TABLE `customerorders`
@@ -353,13 +437,38 @@ ALTER TABLE `customerorders`
 -- AUTO_INCREMENT for table `question`
 --
 ALTER TABLE `question`
+<<<<<<< HEAD
   MODIFY `QuestionNo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+=======
+  MODIFY `QuestionNo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+>>>>>>> 8397726962d090e68a6f4005eb88cf0a6689feab
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
+<<<<<<< HEAD
   MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+=======
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `addv_image`
+--
+ALTER TABLE `addv_image`
+  ADD CONSTRAINT `addv_image_ibfk_1` FOREIGN KEY (`addv_id`) REFERENCES `advertisement` (`addv_id`);
+
+--
+-- Constraints for table `add_owner`
+--
+ALTER TABLE `add_owner`
+  ADD CONSTRAINT `add_owner_ibfk_1` FOREIGN KEY (`addv_id`) REFERENCES `advertisement` (`addv_id`),
+  ADD CONSTRAINT `add_owner_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `users` (`Id`);
+>>>>>>> 8397726962d090e68a6f4005eb88cf0a6689feab
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
