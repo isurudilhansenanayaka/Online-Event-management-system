@@ -4,10 +4,10 @@
  ?>
 <?php
 $db=mysqli_connect("localhost","root","") or die ("Error Occures");
-mysqli_select_db($db,"customer") or die("Error Occures");
+mysqli_select_db($db,"event") or die("Error Occures");
 $type=$_POST['store'];
-$itemn=$_POST['itemname'];
-$itemc=$_POST['itemcode'];
+$Eventname=$_POST['Eventname'];
+$Eventcode=$_POST['Eventcode'];
 
 ?>
 
@@ -34,10 +34,10 @@ $itemc=$_POST['itemcode'];
             <br>
             <label for="email"><b>Item Name</b></label>
             <br>
-            <input type="text" placeholder="Enter ItemName" name="itemname" value="<?php echo $itemn; ?>" readonly>
+            <input type="text" placeholder="Enter ItemName" name="Eventname" value="<?php echo $Eventname; ?>" readonly>
             <br>
-            <input type="hidden" name="itemc" value="<?php echo $itemc; ?>">
-            <input type="hidden" name="cname" value="<?php echo $_SESSION['name']; ?>">
+            <input type="hidden" name="Eventcode" value="<?php echo $Eventcode; ?>">
+            <input type="hidden" name="Eventname" value="<?php echo $_SESSION['Eventname']; ?>">
             <input type="hidden" name="cemail" value="<?php echo $_SESSION['email']; ?>">
             <label for="psw"><b>Question</b></label>
             <br>

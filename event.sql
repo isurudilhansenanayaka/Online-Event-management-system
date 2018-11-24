@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 4.8.3
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 22, 2018 at 06:26 PM
--- Server version: 10.1.16-MariaDB
--- PHP Version: 5.6.24
+-- Generation Time: Nov 24, 2018 at 05:32 AM
+-- Server version: 10.1.35-MariaDB
+-- PHP Version: 7.2.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -45,23 +47,23 @@ INSERT INTO `answer` (`QuestionNo`, `StoreType`, `ItemName`, `CustomerName`, `Qu
 -- --------------------------------------------------------
 
 --
--- Table structure for table `bathandbody`
+-- Table structure for table `catering`
 --
 
-CREATE TABLE `bathandbody` (
-  `ItemCode` varchar(255) NOT NULL,
-  `ItemName` varchar(255) NOT NULL,
+CREATE TABLE `catering` (
+  `EventCode` varchar(255) NOT NULL,
+  `EventName` varchar(255) NOT NULL,
   `Discription` varchar(255) NOT NULL,
   `Price` varchar(255) NOT NULL,
   `Image` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `bathandbody`
+-- Dumping data for table `catering`
 --
 
-INSERT INTO `bathandbody` (`ItemCode`, `ItemName`, `Discription`, `Price`, `Image`) VALUES
-('b001', 'bodywash', 'smooth', '1800.00', 'bodywash.jpg');
+INSERT INTO `catering` (`EventCode`, `EventName`, `Discription`, `Price`, `Image`) VALUES
+('c001', 'Geetha catering', 'Evening party', '7000.00', 'catering1.jpg');
 
 -- --------------------------------------------------------
 
@@ -117,23 +119,23 @@ INSERT INTO `decoration` (`EventCode`, `EventName`, `Discription`, `Price`, `Ima
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fragrance`
+-- Table structure for table `dj`
 --
 
-CREATE TABLE `fragrance` (
-  `ItemCode` varchar(255) NOT NULL,
-  `ItemName` varchar(255) NOT NULL,
+CREATE TABLE `dj` (
+  `EventCode` varchar(255) NOT NULL,
+  `EventName` varchar(255) NOT NULL,
   `Discription` varchar(255) NOT NULL,
   `Price` varchar(255) NOT NULL,
   `Image` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `fragrance`
+-- Dumping data for table `dj`
 --
 
-INSERT INTO `fragrance` (`ItemCode`, `ItemName`, `Discription`, `Price`, `Image`) VALUES
-('f001', 'perfume', 'good fragrance', '2300', 'fragrens.jpg');
+INSERT INTO `dj` (`EventCode`, `EventName`, `Discription`, `Price`, `Image`) VALUES
+('D002', 'DJ wedding', 'For wedding', '15000.00', 'dj34.jpg');
 
 -- --------------------------------------------------------
 
@@ -159,12 +161,33 @@ INSERT INTO `hair` (`ItemCode`, `ItemName`, `Discription`, `Price`, `Image`) VAL
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `lighting`
+--
+
+CREATE TABLE `lighting` (
+  `EventCode` varchar(255) NOT NULL,
+  `EventName` varchar(255) NOT NULL,
+  `Discription` varchar(255) NOT NULL,
+  `Price` varchar(255) NOT NULL,
+  `Image` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `lighting`
+--
+
+INSERT INTO `lighting` (`EventCode`, `EventName`, `Discription`, `Price`, `Image`) VALUES
+('L001', 'Krish lighting', 'Evening party', '10000.00', 'ligh.jpg');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `makeup`
 --
 
 CREATE TABLE `makeup` (
-  `ItemCode` varchar(255) NOT NULL,
-  `ItemName` varchar(255) NOT NULL,
+  `EventCode` varchar(255) NOT NULL,
+  `EventName` varchar(255) NOT NULL,
   `Discription` varchar(255) NOT NULL,
   `Price` varchar(255) NOT NULL,
   `Image` varchar(255) NOT NULL
@@ -174,8 +197,8 @@ CREATE TABLE `makeup` (
 -- Dumping data for table `makeup`
 --
 
-INSERT INTO `makeup` (`ItemCode`, `ItemName`, `Discription`, `Price`, `Image`) VALUES
-('l001', 'lipstic', 'good colors', '1500', 'lipstic.jpg');
+INSERT INTO `makeup` (`EventCode`, `EventName`, `Discription`, `Price`, `Image`) VALUES
+('s001', 'saloon keshi', 'For wedding', '15000.00', 'keshisaloon.jpg');
 
 -- --------------------------------------------------------
 
@@ -227,27 +250,6 @@ INSERT INTO `question` (`QuestionNo`, `StoreType`, `ItemCode`, `ItemName`, `Cust
 -- --------------------------------------------------------
 
 --
--- Table structure for table `skin`
---
-
-CREATE TABLE `skin` (
-  `ItemCode` varchar(255) NOT NULL,
-  `ItemName` varchar(255) NOT NULL,
-  `Discription` varchar(255) NOT NULL,
-  `Price` varchar(255) NOT NULL,
-  `Image` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `skin`
---
-
-INSERT INTO `skin` (`ItemCode`, `ItemName`, `Discription`, `Price`, `Image`) VALUES
-('s002', 'maskara', 'Good for face', '2300', 'maskara.jpg');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `users`
 --
 
@@ -278,10 +280,10 @@ ALTER TABLE `answer`
   ADD PRIMARY KEY (`QuestionNo`);
 
 --
--- Indexes for table `bathandbody`
+-- Indexes for table `catering`
 --
-ALTER TABLE `bathandbody`
-  ADD PRIMARY KEY (`ItemCode`);
+ALTER TABLE `catering`
+  ADD PRIMARY KEY (`EventCode`);
 
 --
 -- Indexes for table `customerorders`
@@ -296,10 +298,10 @@ ALTER TABLE `decoration`
   ADD PRIMARY KEY (`EventCode`);
 
 --
--- Indexes for table `fragrance`
+-- Indexes for table `dj`
 --
-ALTER TABLE `fragrance`
-  ADD PRIMARY KEY (`ItemCode`);
+ALTER TABLE `dj`
+  ADD PRIMARY KEY (`EventCode`);
 
 --
 -- Indexes for table `hair`
@@ -308,10 +310,16 @@ ALTER TABLE `hair`
   ADD PRIMARY KEY (`ItemCode`);
 
 --
+-- Indexes for table `lighting`
+--
+ALTER TABLE `lighting`
+  ADD PRIMARY KEY (`EventCode`);
+
+--
 -- Indexes for table `makeup`
 --
 ALTER TABLE `makeup`
-  ADD PRIMARY KEY (`ItemCode`);
+  ADD PRIMARY KEY (`EventCode`);
 
 --
 -- Indexes for table `men`
@@ -324,12 +332,6 @@ ALTER TABLE `men`
 --
 ALTER TABLE `question`
   ADD PRIMARY KEY (`QuestionNo`);
-
---
--- Indexes for table `skin`
---
-ALTER TABLE `skin`
-  ADD PRIMARY KEY (`ItemCode`);
 
 --
 -- Indexes for table `users`
@@ -346,16 +348,20 @@ ALTER TABLE `users`
 --
 ALTER TABLE `customerorders`
   MODIFY `OrderNo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
 --
 -- AUTO_INCREMENT for table `question`
 --
 ALTER TABLE `question`
   MODIFY `QuestionNo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
   MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
